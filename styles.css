@@ -2,6 +2,7 @@
 #grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 124px 124px 124px 124px 124px;
   gap: 10px;
 }
 
@@ -14,7 +15,7 @@
 
 
 #grid div:nth-child(1) {
-  grid-column: 1 / 5;
+  grid-column: span 4 / auto !important;
 }
 
 #grid div:nth-child(2) {
